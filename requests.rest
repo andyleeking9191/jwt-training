@@ -1,0 +1,26 @@
+### login as Andrew
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "Andrew"
+}
+
+### Andrew's Token
+
+Get http://localhost:5000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW5kcmV3IiwiaWF0IjoxNTk4NzUyMDkyfQ.yYVzAmCIpv4E2JQ0xYeORjZiWB4RHrIsU6tVvXHfciA
+
+
+### Login as John
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "John"
+}
+
+### John's Token
+
+Get http://localhost:5000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obiIsImlhdCI6MTU5ODc1MjE2MX0.L1mqzIPlulQdvNAefNiheYBkim4BzLQ-FS2Cgo9io7c
